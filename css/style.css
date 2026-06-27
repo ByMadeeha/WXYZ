@@ -1,0 +1,344 @@
+/* =====================================
+   WXYZ
+   Designed by Madeeha 
+===================================== */
+
+
+/* ---------- Fonts ---------- */
+
+@font-face{
+    font-family:"Wizard";
+    src:url("../assets/fonts/WizardsMagic.ttf");
+}
+
+@font-face{
+    font-family:"Mountains";
+    src:url("../assets/fonts/MountainsOfChristmas.ttf");
+}
+
+
+
+/* ---------- Reset ---------- */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    background:#ffffff;
+
+    color:#111111;
+
+    overflow-x:hidden;
+
+    font-family:"Mountains", cursive;
+
+}
+
+
+
+
+/* ---------- Navigation ---------- */
+
+header{
+
+    width:100%;
+
+    padding:45px 8%;
+
+}
+
+nav{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.logo{
+
+    font-family:"Wizard";
+
+    text-decoration:none;
+
+    color:#111;
+
+    font-size:55px;
+
+    letter-spacing:10px;
+
+}
+
+.navigation{
+
+    display:flex;
+
+    gap:45px;
+
+}
+
+.navigation a{
+
+    text-decoration:none;
+
+    color:#222;
+
+    transition:.4s;
+
+    font-size:22px;
+
+}
+
+.navigation a:hover{
+
+    opacity:.45;
+
+}
+
+
+
+
+
+/* ---------- Hero ---------- */
+
+.hero{
+
+    height:70vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+}
+
+.hero h1{
+
+    font-family:"Wizard";
+
+    font-size:120px;
+
+    letter-spacing:18px;
+
+    font-weight:normal;
+
+}
+
+.brand-line{
+
+    margin-top:25px;
+
+    font-size:25px;
+
+    max-width:650px;
+
+    opacity:.55;
+
+    line-height:1.7;
+
+}
+
+
+
+
+
+/* ---------- Featured Object ---------- */
+
+.featured{
+
+    display:flex;
+
+    justify-content:center;
+
+    padding:140px 0;
+
+}
+
+.object-card{
+
+    width:340px;
+
+    text-align:center;
+
+    padding:50px;
+
+    transition:.5s;
+
+    cursor:pointer;
+
+}
+
+.object-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.object-number{
+
+    opacity:.45;
+
+    letter-spacing:3px;
+
+    font-size:15px;
+
+}
+
+.object-card h2{
+
+    font-family:"Wizard";
+
+    margin:20px 0;
+
+    font-size:42px;
+
+    font-weight:normal;
+
+}
+
+.object-card p{
+
+    line-height:1.8;
+
+}
+
+.discover{
+
+    display:inline-block;
+
+    margin-top:35px;
+
+    color:#111;
+
+    text-decoration:none;
+
+}
+
+.discover:hover{
+
+    opacity:.5;
+
+}
+
+
+
+
+
+/* ---------- Quote ---------- */
+
+.quote{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    height:45vh;
+
+    text-align:center;
+
+    padding:40px;
+
+}
+
+.quote p{
+
+    font-size:30px;
+
+    max-width:700px;
+
+    opacity:.45;
+
+    line-height:2;
+
+}
+
+
+
+
+
+/* ---------- Footer ---------- */
+
+footer{
+
+    text-align:center;
+
+    padding:80px;
+
+    opacity:.35;
+
+    font-size:18px;
+
+}
+
+
+
+
+
+/* ---------- Responsive ---------- */
+
+@media(max-width:900px){
+
+    nav{
+
+        flex-direction:column;
+
+        gap:30px;
+
+    }
+
+    .navigation{
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+        gap:25px;
+
+    }
+
+    .hero h1{
+
+        font-size:75px;
+
+        letter-spacing:10px;
+
+    }
+
+    .brand-line{
+
+        font-size:19px;
+
+        width:90%;
+
+    }
+
+    .object-card{
+
+        width:90%;
+
+    }
+
+    .quote p{
+
+        font-size:22px;
+
+    }
+
+  }
