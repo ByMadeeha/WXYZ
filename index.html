@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WXYZ</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #ffffff;
+      color: #111;
+      font-family: "Mountains of Christmas", serif;
+      overflow-x: hidden;
+    }
+
+    /* HERO */
+    .hero {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .logo {
+      font-family: "Playfair Display", serif;
+      font-size: 64px;
+      letter-spacing: 12px;
+      margin-bottom: 10px;
+    }
+
+    .tagline {
+      font-size: 16px;
+      opacity: 0.6;
+      letter-spacing: 2px;
+    }
+
+    /* NAVIGATION */
+    .nav {
+      position: fixed;
+      top: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 40px;
+      font-size: 14px;
+      opacity: 0.7;
+    }
+
+    .nav a {
+      text-decoration: none;
+      color: #111;
+      transition: 0.3s;
+    }
+
+    .nav a:hover {
+      opacity: 0.4;
+    }
+
+    /* GRID SECTION */
+    .grid-section {
+      padding: 120px 60px;
+    }
+
+    .grid-title {
+      font-family: "Playfair Display", serif;
+      font-size: 28px;
+      margin-bottom: 60px;
+      text-align: center;
+      letter-spacing: 4px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 80px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.7);
+      padding: 20px;
+      text-align: center;
+      transition: 0.4s ease;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      opacity: 0.8;
+    }
+
+    .object-id {
+      font-size: 12px;
+      opacity: 0.5;
+      margin-bottom: 10px;
+    }
+
+    .object-name {
+      font-family: "Playfair Display", serif;
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+
+    .object-desc {
+      font-size: 12px;
+      opacity: 0.6;
+    }
+
+    /* LIMINAL SPACE SECTION */
+    .liminal {
+      height: 80vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0.3;
+      font-style: italic;
+      text-align: center;
+      padding: 40px;
+    }
+
+    /* CUSTOM SECTION */
+    .custom {
+      padding: 120px 60px;
+      text-align: center;
+    }
+
+    .custom h2 {
+      font-family: "Playfair Display", serif;
+      letter-spacing: 3px;
+    }
+
+    input, textarea {
+      width: 300px;
+      padding: 10px;
+      margin-top: 20px;
+      border: 1px solid #ddd;
+      font-family: inherit;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      border: none;
+      background: #111;
+      color: #fff;
+      cursor: pointer;
+      font-family: inherit;
+    }
+
+    button:hover {
+      opacity: 0.7;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 60px;
+      font-size: 12px;
+      opacity: 0.5;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <div class="nav">
+    <a href="#">WXYZ</a>
+    <a href="#objects">Objects</a>
+    <a href="#custom">Custom Orders</a>
+    <a href="#about">About</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="logo">WXYZ</div>
+    <div class="tagline">objects that feel like they already existed</div>
+  </section>
+
+  <!-- OBJECT GRID -->
+  <section class="grid-section" id="objects">
+    <div class="grid-title">OBJECTS</div>
+
+    <div class="grid">
+
+      <div class="card">
+        <div class="object-id">WXYZ / 001</div>
+        <div class="object-name">Brain Stone</div>
+        <div class="object-desc">found thinking matter</div>
+      </div>
+
+      <div class="card">
+        <div class="object-id">WXYZ / 002</div>
+        <div class="object-name">Pocket Forest</div>
+        <div class="object-desc">miniature living landscape</div>
+      </div>
+
+      <div class="card">
+        <div class="object-id">WXYZ / 003</div>
+        <div class="object-name">Silent House</div>
+        <div class="object-desc">brick memory structure</div>
+      </div>
+
+      <div class="card">
+        <div class="object-id">WXYZ / 004</div>
+        <div class="object-name">Glass Water World</div>
+        <div class="object-desc">contained aquatic system</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- LIMINAL SPACE -->
+  <section class="liminal">
+    some objects exist only because they were not forgotten yet
+  </section>
+
+  <!-- CUSTOM ORDERS -->
+  <section class="custom" id="custom">
+    <h2>CUSTOM ORDERS</h2>
+    <p>describe your object and we will find it for you</p>
+
+    <input type="text" placeholder="what should it feel like?"/>
+    <br/>
+    <textarea placeholder="tell us more..."></textarea>
+    <br/>
+    <button>request from WXYZ</button>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="custom" id="about">
+    <h2>ABOUT WXYZ</h2>
+    <p style="max-width:500px; margin:auto; opacity:0.6;">
+      WXYZ is a collection of objects that feel like they already existed in a softer version of reality.
+    </p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    WXYZ © a liminal archive of objects that shouldn't exist
+  </footer>
+
+</body>
+  </html>
