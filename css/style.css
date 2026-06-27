@@ -431,3 +431,129 @@ transform:translateY(0);
     opacity:.45;
 
 }
+
+
+/* ===========================
+OBJECTS PAGE
+=========================== */
+
+.objects-hero{
+
+padding:120px 10%;
+
+text-align:center;
+
+}
+
+.objects-hero h1{
+
+font-family:"Wizard";
+
+font-size:80px;
+
+font-weight:normal;
+
+margin:30px 0;
+
+line-height:1.2;
+
+}
+
+.objects-sub{
+
+font-size:22px;
+
+opacity:.6;
+
+}
+
+
+
+.objects-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(320px,1fr));
+
+gap:80px;
+
+padding:80px 10% 160px;
+
+}
+
+
+
+.gallery-card{
+
+text-align:center;
+
+padding:40px;
+
+transition:.45s;
+
+cursor:pointer;
+
+}
+
+
+
+.gallery-card:hover{
+
+transform:translateY(-10px);
+
+}
+
+
+
+.object-image{
+
+font-size:80px;
+
+margin-bottom:25px;
+
+}
+
+
+
+.gallery-card h2{
+
+font-family:"Wizard";
+
+font-size:42px;
+
+font-weight:normal;
+
+margin:20px 0;
+
+}
+
+
+
+.gallery-card p{
+
+line-height:1.8;
+
+opacity:.65;
+
+}
+
+
+
+.gallery-card a{
+
+display:inline-block;
+
+margin-top:25px;
+
+text-decoration:none;
+
+color:#111;
+
+}
+
+.gallery-card a:hover{
+
+opacity:.5;
+
+}
